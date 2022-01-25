@@ -2,9 +2,9 @@
 
 #nullable disable
 
-namespace Dotnet6_WebApiBasic.Migrations
+namespace Api.Migrations
 {
-    public partial class initalmigration : Migration
+    public partial class initialmigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

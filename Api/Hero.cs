@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Dotnet6_WebApiBasic
+namespace Api
 {
     public class Hero
     {

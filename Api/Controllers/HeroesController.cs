@@ -1,8 +1,8 @@
-﻿using Dotnet6_WebApiBasic.Data;
+﻿using Api.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Dotnet6_WebApiBasic.Controllers
+namespace Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]    
@@ -14,9 +14,9 @@ namespace Dotnet6_WebApiBasic.Controllers
         //    new Hero { Id = 2, Name = "Ironman", FirstName = "Tony", LastName = "Stark", Place = "Long Island" }
         //};
 
-        private HeroesDbContext _context { get; set; }
+        private DataDbContext _context { get; set; }
 
-        public HeroesController(HeroesDbContext context)
+        public HeroesController(DataDbContext context)
         {
             _context = context;
         }
